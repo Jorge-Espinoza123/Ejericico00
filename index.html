@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Clasificador de ropa (ONNX)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- ONNX Runtime Web desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Clasificador de ropa (Fashion-MNIST)</h1>
+  <p>Dibuja o carga imagen (28x28) y presiona "Predecir".</p>
+  <canvas id="canvas" width="280" height="280"></canvas>
+  <div class="botones">
+    <button id="limpiar">Limpiar</button>
+    <button id="predecir">Predecir</button>
+  </div>
+  <h2 id="resultado"></h2>
+  <div id="labels"></div>
+</body>
+</html>
